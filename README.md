@@ -1,10 +1,10 @@
 # 우리 가족 쓰고 담기 - 쓰담
 
-<img width="198.5" alt="image" src="https://github.com/LeeHoonDong/Ssdam_Server/assets/51987233/1896f6ff-ae6a-439f-951a-f90f082aca9a">
-<img width="198" alt="image" src="https://github.com/LeeHoonDong/Ssdam_Server/assets/51987233/fc8e43d2-6b24-48bd-a4b4-0f77e43ecb18">
-<img width="195" alt="image" src="https://github.com/LeeHoonDong/Ssdam_Server/assets/51987233/fe1bd4e6-f477-4211-8bdc-d767c6b08230">
-<img width="197.5" alt="image" src="https://github.com/LeeHoonDong/Ssdam_Server/assets/51987233/ecba3f26-037c-46e1-ac73-04539460686c">
-<img width="198" alt="image" src="https://github.com/LeeHoonDong/Ssdam_Server/assets/51987233/3fb9ae7c-e6a3-4f38-ab3f-0cb15d796132">
+<img width="250" alt="image" src="https://github.com/LeeHoonDong/Ssdam_Server/assets/51987233/1896f6ff-ae6a-439f-951a-f90f082aca9a">
+<img width="250" alt="image" src="https://github.com/LeeHoonDong/Ssdam_Server/assets/51987233/fc8e43d2-6b24-48bd-a4b4-0f77e43ecb18">
+<img width="247" alt="image" src="https://github.com/LeeHoonDong/Ssdam_Server/assets/51987233/fe1bd4e6-f477-4211-8bdc-d767c6b08230">
+<img width="249.5" alt="image" src="https://github.com/LeeHoonDong/Ssdam_Server/assets/51987233/ecba3f26-037c-46e1-ac73-04539460686c">
+<img width="250" alt="image" src="https://github.com/LeeHoonDong/Ssdam_Server/assets/51987233/3fb9ae7c-e6a3-4f38-ab3f-0cb15d796132">
 
 
 ## 🧑‍💻 팀 소개 및 팀 노션
