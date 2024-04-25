@@ -1,44 +1,58 @@
-### 수동 배포 방법
-1. 코드 수정 후 빌드(key와 yml 포함해야함)
-```shell
-(local)
- 
-> ./gradlew bootJar
-```
+# 우리 가족 쓰고 담기 - 쓰담
 
-2. SCP 로 EC2 인스턴스에 jar 파일 전송
-```shell
-(local)
+<img width="198.5" alt="image" src="https://github.com/LeeHoonDong/Ssdam_Server/assets/51987233/1896f6ff-ae6a-439f-951a-f90f082aca9a">
+<img width="198" alt="image" src="https://github.com/LeeHoonDong/Ssdam_Server/assets/51987233/fc8e43d2-6b24-48bd-a4b4-0f77e43ecb18">
+<img width="195" alt="image" src="https://github.com/LeeHoonDong/Ssdam_Server/assets/51987233/fe1bd4e6-f477-4211-8bdc-d767c6b08230">
+<img width="197.5" alt="image" src="https://github.com/LeeHoonDong/Ssdam_Server/assets/51987233/ecba3f26-037c-46e1-ac73-04539460686c">
+<img width="198" alt="image" src="https://github.com/LeeHoonDong/Ssdam_Server/assets/51987233/3fb9ae7c-e6a3-4f38-ab3f-0cb15d796132">
 
-> scp -i {pem 경로} ./build/libs/ssdam_server-0.0.1-SNAPSHOT.jar ubuntu@{EC2 인스턴스 ip}:~/ssdam
-```
 
-3. EC2 인스턴스 SSH
-```shell
-(local)
+## 🧑‍💻 팀 소개 및 팀 노션
 
-> ssh -i {pem 경로} ubuntu@{EC2 인스턴스 ip}
-```
+팀 이름 : DDUCKDORI    
+팀 노션 링크 : [https://pattern-mink-364.notion.site/OTT-3d17c00593ae4b868155952958b7da3f](https://www.notion.so/Team-db7098a136294502a76c81216180db63?pvs=4)
 
-4. 기존 프로세스 종료 후 재실행
-```shell
-(ec2 instance)
 
-> jobs
-> fg %1 (jobs 에서 스프링 job 인덱스, 거의 무조건 1)
+## ⌛ 개발 기간
 
-ctrl + c 로 프로세스 종료
+2023.10.21 ~ 2024.02.01
 
-> cd ~/ssdam
-> nohup java -jar ssdam_server-0.0.1-SNAPSHOT.jar &
 
-서버 로그 확인
-> tail -f nohub.out
-```
+## 💻 프로젝트 / 서비스 소개
 
-### 복구하면서 참고사항
-* 기존에 PK를 이상하게 복합키로 해놓았을 것이라 추측되는 테이블들은 복구하면서 PK 안걸었으니 참고할 것.
-* 기타 각종 제약(NOT NULL, FK)들도 혹시 몰라서 최대한 걸지 않음.
-* AWS ALB에서 SSL Termination 하도록 변경해서 그 부분 체크하는 스프링 시큐리티 설정 제거.
-* SSL 설정의 편리함을 위해 로드밸런서 사용했는데 비용이 발생하므로 EC2 내부에 Nginx 설치하는 방식도 고려볼 것.
-* 배포 방식도 일단 제일 빠르고 편한 방법으로 하긴 했는데 추후 개선하는 편이 좋을 듯.
+우리 가족의 이야기를 쓰고 담는 쓰담!
+
+우리 아이의 성장기, 서로의 생각을 기록하고 공유하는 것보다 중요한 일이 있을까요?
+
+질문을 통해 쉽게 아아보는 우리 가족의 생각, 차곡차곡 추억을 기록해봐요!
+
+- 다양한 질문에 대한 우리의 생각!
+
+소소한 일상에서 가치관까지, 우리 가족은 어떤 생각을 하는지 답변을 통해 기록해봐요.
+
+- 9시에 도착하는 새로운 질문!
+
+질문에 모든 가족이 답변을 완료하면 다음날 9시에 새로운 질문이 도착해요.
+
+- 하루하루 완성하는 추억!
+
+캘린더에서 답변을 완료한 일자의 질문과 가족 구성원들의 모든 답변을 확인할 수 있어요.
+
+
+## 🌐 기술 스택
+
+Back-end : <img src="https://img.shields.io/badge/java 17-007396?style=for-the-badge&logo=java&logoColor=white"> <img src="https://img.shields.io/badge/spring-6DB33F?style=for-the-badge&logo=spring&logoColor=white"> <img src="https://img.shields.io/badge/mysql-4479A1?style=for-the-badge&logo=mysql&logoColor=white">
+<img src="https://img.shields.io/badge/mybatis-black?style=for-the-badge&logo&logoColor=white">
+
+Front-end : <img src="https://img.shields.io/badge/swift-F54A2A?style=for-the-badge&logo=swift&logoColor=white"> 
+
+## 핵심 기능 및 부가 기능
+
+- 가족 연결 기능 개발
+- 애플 연동 로그인 서비스 개발
+- 질문 자동 전송 프로세스 및 Push 알림 개발
+- 주어진 질문에 대한 답변 등록, 수정, 삭제, 조회 서비스 개발
+- Amazon LightSail을 이용하여 서비스 배포 및 운영에 필요한 Infra 구축
+
+## 📜 ERD
+![image](https://github.com/LeeHoonDong/Ssdam_Server/assets/51987233/adb97f8c-e42e-49ed-a69d-a1eb7b5bceda)
